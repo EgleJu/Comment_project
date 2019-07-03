@@ -1,6 +1,7 @@
 <?php
 
-$connect = new PDO('mysql:host=localhost:3306;dbname:comments', 'root', '');
+$connect = new PDO('mysql:host=@us-cdbr-iron-east-02.cleardb.net;
+dbname:/heroku_8a8fbf4f3d60ae4', 'b0a1c84d43e334', '44a5a5d7');
 
 $error = '';
 $comment_name = '';
