@@ -1,13 +1,6 @@
 <?php
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-$server = $url["us-cdbr-iron-east-02.cleardb.net"];
-$username = $url["b0a1c84d43e334"];
-$password = $url["44a5a5d7"];
-$db = substr($url["heroku_8a8fbf4f3d60ae4"], 1);
-
-$connect = new mysqli($server, $username, $password, $db);
+$connect = new PDO('mysql:host=localhost:3306;dbname:comments', 'root', '');
 
 $error = '';
 $comment_name = '';
